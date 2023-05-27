@@ -1,0 +1,1 @@
+# DiscoverWeeklyCollector
