@@ -6,7 +6,8 @@
   "scripts": {
     "start:backend": "node backend/index.js",
     "start:frontend": "node frontend/index.js",
-    "start:puppeteer": "node puppeteer/index.js"
+    "start:puppeteer": "node puppeteer/index.js",
+    "aggregator": "concurrently \"npm:start:frontend\" \"npm:start:backend\" \"npm:start:puppeteer\" --kill-others --success last"
   },
   "author": "",
   "license": "ISC",
